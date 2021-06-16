@@ -49,4 +49,43 @@ body {
   background: #F6F6F6;
 }
 
+.working {
+  margin: 0 5%;
+  padding: 10% 0;
+}
+.working__container {
+  margin: 0 5%;
+}
+.working__card {
+  background: #F6F6F6;
+  margin: 5% 0;
+  display: flex;
+  border-radius: 20px;
+  padding: 1.5rem;
+  position: relative;
+}
+.working__card--purple {
+  background: #f2eafb;
+}
+.working__icon {
+  color: #7E7E7E;
+  margin-right: 5%;
+}
+.working__icon--purple {
+  color: #9356DC;
+}
+.working__step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #9356DC;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  position: absolute;
+  left: -4%;
+}
+
 /*# sourceMappingURL=style.css.map */

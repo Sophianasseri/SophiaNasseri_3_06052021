@@ -15,8 +15,49 @@
         margin-left: 1rem;
     }
 }
+//présenation du site
 .presentation {
     padding: 1rem 1.5rem;
     text-align: center;
     background: $color-background;
+}
+
+//Fonctionnement du site
+.working {
+    margin: 0 5%;
+    padding: 10% 0;
+    &__container {
+        margin: 0 5%;
+    }
+    &__card {
+        background: $color-background;
+        margin: 5% 0;
+        display:flex;
+        border-radius: 20px;
+        padding: 1.5rem;
+        position:relative;
+        &--purple {
+            background: lighten($color-primary, 35%);
+        }
+    }
+    &__icon {
+        color: #7E7E7E;
+        margin-right: 5%;
+        &--purple {
+        color: $color-primary;
+        }
+    }
+    &__step {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background: $color-primary;
+        border-radius: 50%;
+        width: 1.5rem;
+        height: 1.5rem;
+        text-align: center;
+        position: absolute;
+        left: -4%;
+    }
 }
