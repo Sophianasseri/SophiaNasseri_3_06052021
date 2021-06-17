@@ -1,4 +1,12 @@
+
 .card {
     box-shadow: 0px 4px 8px -3px rgb(176 166 166 / 75%);
-    border-radius: 20px;
+    border-radius: 15px;
+    background: #fff;
+    & h3 {
+        font-weight: 500;
+    }
+    & p {
+        font-weight: 300;
+    }
 }
