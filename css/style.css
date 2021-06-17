@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -10,6 +11,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .btn {
@@ -37,12 +46,34 @@ body {
   margin: 0 auto;
 }
 
+.footer {
+  background: #353535;
+  padding: 1.5rem;
+}
+.footer__logo {
+  height: 18px;
+  margin: 0.5rem 0;
+}
+.footer li {
+  padding: 0.2rem 0;
+}
+.footer__icon {
+  font-size: 12px;
+  width: 7%;
+}
+
+.footer, .footer__link {
+  color: #fff;
+}
+
+/*Couleur de fond*/
 .presentation,
 .working__card,
 .restaurant {
   background: #F6F6F6;
 }
 
+/*Localisation*/
 .location {
   padding: 0.5rem;
   display: flex;
@@ -54,11 +85,13 @@ body {
   margin-left: 1rem;
 }
 
+/*présenation du site*/
 .presentation {
   padding: 1rem 1.5rem;
   text-align: center;
 }
 
+/*Fonctionnement du site*/
 .working {
   margin: 0 5%;
   padding: 10% 0;
@@ -96,6 +129,7 @@ body {
   left: -12px;
 }
 
+/*Choix restaurant*/
 .restaurant {
   padding: 1rem;
 }
