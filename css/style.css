@@ -51,10 +51,20 @@ a {
   position: relative;
   z-index: 2;
 }
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+}
 .header__logo {
   width: 100%;
   height: 23px;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    height: 30px;
+  }
 }
 
 .footer {
@@ -64,6 +74,11 @@ a {
 .footer__logo {
   height: 18px;
   margin: 0.5rem 0;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    width: 100%;
+  }
 }
 .footer li {
   padding: 0.2rem 0;
@@ -77,6 +92,12 @@ a {
   color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__content {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -149,6 +170,11 @@ a {
 .presentation * {
   margin: 5% 15%;
 }
+@media screen and (min-width: 768px) {
+  .presentation * {
+    margin: 2% 15%;
+  }
+}
 .presentation__text {
   font-weight: 200;
 }
@@ -156,7 +182,7 @@ a {
 /*Fonctionnement du site*/
 .working {
   margin: 0 5%;
-  padding: 10% 0;
+  padding: 2rem 0;
 }
 .working__container {
   margin: 0 5%;
@@ -168,6 +194,11 @@ a {
   display: flex;
   padding: 1.8rem;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .working__card {
+    margin: 5% 0;
+  }
 }
 .working__card--purple {
   background: #f4eefc;
@@ -199,12 +230,22 @@ a {
 .restaurant {
   padding: 2.5rem 1rem;
 }
+@media screen and (min-width: 768px) {
+  .restaurant {
+    padding: 2.5rem 2rem;
+  }
+}
 
 .restaurant-card {
   width: 100%;
   height: auto;
   position: relative;
   margin: 5% 0;
+}
+@media screen and (min-width: 768px) {
+  .restaurant-card {
+    margin: 2% 0;
+  }
 }
 .restaurant-card__link {
   width: 100%;
@@ -240,6 +281,15 @@ a {
   z-index: 2;
   padding: 1em;
   margin: -1em -0.5em;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant__container {
+    margin: 2% 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
