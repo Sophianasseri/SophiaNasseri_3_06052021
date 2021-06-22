@@ -1,0 +1,61 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+@import "../components/buttons";
+
+.restaurant-choice__img {
+    height: 300px;
+    width: 100%; 
+    object-fit: cover;
+}
+.menu {
+    width: 100%;
+    padding: 2rem 5%;
+    background: $color-background;
+    border-radius: 35px 35px 0 0;
+    position : relative;
+    top: -70px;
+    margin-bottom: -70px;
+    &__btn {
+        display: flex;
+        margin: 0 auto;
+        padding: 0.9rem 2.5rem;
+    }
+}
+.menu-title {
+    @include font-secondary;
+    display: flex;
+    justify-content: space-between;
+    & h1 {
+        font-size: 24px;
+    }
+}
+.menu-selection {
+    margin: 1rem 0;
+    &__title {
+        @include light-font;
+        text-transform: uppercase;
+        font-size: 16px;
+        border-bottom: 3px solid $color-tertiary;
+        padding: 0.3rem 0;
+        width: 40px;
+    }
+    &__description {
+        @include light-font;
+        margin-top: 0.2rem;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 0.5rem;
+    }
+    &__card {
+        display:flex;
+        justify-content: space-between;
+        padding: 1rem;
+        margin: 3% 0;
+    }
+    &__price {
+        align-self: flex-end;
+        font-weight: 600;
+    }
+}
