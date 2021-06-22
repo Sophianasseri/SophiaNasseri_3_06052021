@@ -140,14 +140,7 @@
         display: flex;
         justify-content: space-between;
         padding: 0.9rem;
-    }
-    &__fav {
-        border: none;
-        background: none;
-        font-size: 25px;
-        z-index: 2;
-        padding: 1em;
-        margin: -1em -0.5em;
+        @include light-font;
     }
 }
 @media screen and (min-width: $breakpoint-tablet) {

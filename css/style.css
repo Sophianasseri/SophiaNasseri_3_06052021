@@ -32,6 +32,15 @@ a {
   box-shadow: 0px 5px 10px -4px rgba(34, 32, 32, 0.75);
 }
 
+.btn-fav {
+  border: none;
+  background: none;
+  font-size: 25px;
+  z-index: 2;
+  padding: 1em;
+  margin: -1em -0.5em;
+}
+
 .card {
   box-shadow: 0px 4px 8px -3px rgba(176, 166, 166, 0.75);
   border-radius: 15px;
@@ -39,9 +48,6 @@ a {
 }
 .card h3 {
   font-weight: 500;
-}
-.card p {
-  font-weight: 300;
 }
 
 .header {
@@ -67,7 +73,7 @@ a {
   }
 }
 .header__icon {
-  font-size: 18px;
+  font-size: 20px;
   position: absolute;
   bottom: 30%;
   left: 7%;
@@ -133,6 +139,15 @@ a {
   box-shadow: 0px 5px 10px -4px rgba(34, 32, 32, 0.75);
 }
 
+.btn-fav {
+  border: none;
+  background: none;
+  font-size: 25px;
+  z-index: 2;
+  padding: 1em;
+  margin: -1em -0.5em;
+}
+
 .card {
   box-shadow: 0px 4px 8px -3px rgba(176, 166, 166, 0.75);
   border-radius: 15px;
@@ -140,9 +155,6 @@ a {
 }
 .card h3 {
   font-weight: 500;
-}
-.card p {
-  font-weight: 300;
 }
 
 /*Couleur de fond*/
@@ -183,7 +195,7 @@ a {
   }
 }
 .presentation__text {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 /*Fonctionnement du site*/
@@ -299,14 +311,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 0.9rem;
-}
-.restaurant-card__fav {
-  border: none;
-  background: none;
-  font-size: 25px;
-  z-index: 2;
-  padding: 1em;
-  margin: -1em -0.5em;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 768px) {
@@ -316,6 +321,85 @@ a {
     grid-template-columns: 1fr 1fr;
     grid-gap: 3%;
   }
+}
+.btn {
+  border: none;
+  padding: 0.9rem 1.1rem;
+  font-size: 16px;
+  border-radius: 50px;
+  color: #fff;
+  background: linear-gradient(177deg, #FF79DA 0%, #9356DC 65%);
+  box-shadow: 0px 5px 10px -4px rgba(34, 32, 32, 0.75);
+}
+
+.btn-fav {
+  border: none;
+  background: none;
+  font-size: 25px;
+  z-index: 2;
+  padding: 1em;
+  margin: -1em -0.5em;
+}
+
+.restaurant-choice__img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  width: 100%;
+  padding: 2rem 1rem;
+  background: #F6F6F6;
+  border-radius: 35px 35px 0 0;
+  position: relative;
+  top: -50px;
+  margin-bottom: -50px;
+}
+.menu__btn {
+  display: flex;
+  margin: 0 auto;
+  padding: 0.9rem 2.5rem;
+}
+
+.menu-title {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  justify-content: space-around;
+}
+.menu-title h1 {
+  font-size: 24px;
+}
+
+.menu-selection {
+  margin: 1rem 0;
+}
+.menu-selection__title {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-bottom: 3px solid #99E2D0;
+  padding: 0.3rem 0;
+  width: 40px;
+}
+.menu-selection__description {
+  font-weight: 300;
+  margin-top: 0.2rem;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 0.5rem;
+}
+.menu-selection__card {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 3% 0;
+}
+.menu-selection__price {
+  align-self: flex-end;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
