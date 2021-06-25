@@ -1,0 +1,22 @@
+@keyframes loading {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes spinner {
+    to {
+        transform: rotate(2turn);
+
+    }
+}
+@keyframes page-container {
+ from {
+     transform: translateX(-9999px);
+ }
+ to {
+     transform: translateX(0);
+ }
+}
