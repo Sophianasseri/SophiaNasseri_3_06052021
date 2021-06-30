@@ -94,10 +94,22 @@ a {
 }
 @keyframes page-container {
   from {
-    transform: translateX(-9999px);
+    transform: translate(-9999px);
   }
   to {
-    transform: translateX(0);
+    transform: translate(0);
+  }
+}
+@keyframes menu-appearing {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .loader {
@@ -444,6 +456,39 @@ a {
     grid-gap: 3%;
   }
 }
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes spinner {
+  to {
+    transform: rotate(2turn);
+  }
+}
+@keyframes page-container {
+  from {
+    transform: translate(-9999px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+@keyframes menu-appearing {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .btn {
   border: none;
   padding: 0.9rem 1.1rem;
@@ -547,6 +592,9 @@ a {
   justify-content: space-between;
   padding: 1rem;
   margin: 3% 0;
+  opacity: 0;
+  animation: menu-appearing 1s ease-in both;
+  animation-delay: 300ms;
 }
 .menu-selection__price {
   align-self: flex-end;

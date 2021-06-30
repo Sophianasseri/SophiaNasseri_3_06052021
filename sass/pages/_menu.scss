@@ -1,5 +1,6 @@
 @import "../utils/variables";
 @import "../utils/mixins";
+@import "../utils/keyframes";
 @import "../components/buttons";
 
 .restaurant-choice__img {
@@ -31,6 +32,7 @@
 }
 .menu-selection {
     margin: 1rem 0;
+    
     &__title {
         @include light-font;
         text-transform: uppercase;
@@ -38,6 +40,7 @@
         border-bottom: 3px solid $color-tertiary;
         padding: 0.3rem 0;
         width: 40px;
+       
     }
     &__description {
         @include light-font;
@@ -53,6 +56,9 @@
         justify-content: space-between;
         padding: 1rem;
         margin: 3% 0;
+        opacity: 0;
+        animation: menu-appearing 1s ease-in both;
+        animation-delay: 300ms;
     }
     &__price {
         align-self: flex-end;
