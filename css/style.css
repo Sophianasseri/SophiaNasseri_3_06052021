@@ -574,6 +574,12 @@ a {
 
 .menu-selection {
   margin: 1rem 0;
+  opacity: 0;
+  animation: menu-appearing 1s ease-in both;
+  animation-delay: 300ms;
+}
+.menu-selection:nth-child(3) {
+  animation-delay: 800ms;
 }
 .menu-selection__title {
   font-weight: 300;
@@ -598,9 +604,12 @@ a {
   justify-content: space-between;
   padding: 1rem;
   margin: 3% 0;
-  opacity: 0;
-  animation: menu-appearing 1s ease-in both;
-  animation-delay: 300ms;
+}
+.menu-selection__card h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 0.5em;
 }
 .menu-selection__card:hover > .menu-selection__price {
   transition: 400ms ease-in-out;
