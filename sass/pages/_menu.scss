@@ -30,6 +30,10 @@
         font-size: 24px;
     }
 }
+.check-icon{
+    margin: auto;
+    transform: rotate(0);
+}
 .menu-selection {
     margin: 1rem 0;
     
@@ -52,6 +56,7 @@
         padding-right: 0.5rem;
     }
     &__card {
+        position: relative;
         display:flex;
         justify-content: space-between;
         padding: 1rem;
@@ -59,9 +64,42 @@
         opacity: 0;
         animation: menu-appearing 1s ease-in both;
         animation-delay: 300ms;
+        &:hover > .menu-selection__price {
+            transition: 400ms ease-in-out;
+             margin-right: 19%;
+
+        }
+        &:hover > .menu-selection__check {
+            transition: 400ms ease-in-out;
+            width:17%;
+            opacity: 1;
+            transform: translateX(0);
+        }
+        &:hover .check-icon {
+            transition: 500ms ease-in-out;
+            transform: rotate(360deg);
+        }
     }
     &__price {
         align-self: flex-end;
         font-weight: 600;
+        transition: 400ms ease-in-out;
+    }
+    &__check {
+        position: absolute;
+        display: flex;
+        top:0;
+        right:0;
+        color: #fff;
+        font-size: 22px;
+        background: $color-tertiary;
+        width: 0%;
+        border-radius: 0 15px 15px 0;
+        height: 100%;
+        opacity: 0;
+        transform: translateX(1px);
+        transition: 400ms ease-in-out;
     }
 }
+
+

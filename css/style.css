@@ -567,6 +567,11 @@ a {
   font-size: 24px;
 }
 
+.check-icon {
+  margin: auto;
+  transform: rotate(0);
+}
+
 .menu-selection {
   margin: 1rem 0;
 }
@@ -588,6 +593,7 @@ a {
   padding-right: 0.5rem;
 }
 .menu-selection__card {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -596,9 +602,39 @@ a {
   animation: menu-appearing 1s ease-in both;
   animation-delay: 300ms;
 }
+.menu-selection__card:hover > .menu-selection__price {
+  transition: 400ms ease-in-out;
+  margin-right: 19%;
+}
+.menu-selection__card:hover > .menu-selection__check {
+  transition: 400ms ease-in-out;
+  width: 17%;
+  opacity: 1;
+  transform: translateX(0);
+}
+.menu-selection__card:hover .check-icon {
+  transition: 500ms ease-in-out;
+  transform: rotate(360deg);
+}
 .menu-selection__price {
   align-self: flex-end;
   font-weight: 600;
+  transition: 400ms ease-in-out;
+}
+.menu-selection__check {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+  color: #fff;
+  font-size: 22px;
+  background: #99E2D0;
+  width: 0%;
+  border-radius: 0 15px 15px 0;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(1px);
+  transition: 400ms ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
