@@ -49,11 +49,15 @@
     margin: auto;
     transform: rotate(0);
 }
+
+/*Sélection d'un plat*/
 .menu-selection {
     margin: 1rem 0;
     opacity: 0;
     animation: menu-appearing 1s ease-in both;
     animation-delay: 300ms;
+
+    /*animation appariton menu*/
     &:nth-child(2) {
         animation-delay: 800ms;
     }
@@ -91,17 +95,24 @@
             text-overflow: ellipsis;
             padding-right: 0.5em;
         }
-       
+       /*swipe prix*/
         &:hover > .menu-selection__price {
             transition: 400ms ease-in-out;
              margin-right: 19%;
+             @media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop){
+                margin-right: 17%;
+            }
 
         }
+        /*swipe check*/
         &:hover > .menu-selection__check {
             transition: 400ms ease-in-out;
             width:17%;
             opacity: 1;
             transform: translateX(0);
+            @media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop){
+                width: 15%;
+            }
         }
         &:hover .check-icon {
             transition: 500ms ease-in-out;
@@ -127,6 +138,9 @@
         opacity: 0;
         transform: translateX(1px);
         transition: 400ms ease-in-out;
+        @media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop){
+            font-size: 30px;
+        }
     }
 }
 .menu-container {

@@ -646,11 +646,13 @@ a {
   transform: rotate(0);
 }
 
+/*Sélection d'un plat*/
 .menu-selection {
   margin: 1rem 0;
   opacity: 0;
   animation: menu-appearing 1s ease-in both;
   animation-delay: 300ms;
+  /*animation appariton menu*/
 }
 .menu-selection:nth-child(2) {
   animation-delay: 800ms;
@@ -681,6 +683,8 @@ a {
   justify-content: space-between;
   padding: 1rem;
   margin: 3% 0;
+  /*swipe prix*/
+  /*swipe check*/
 }
 .menu-selection__card h3 {
   white-space: nowrap;
@@ -692,11 +696,21 @@ a {
   transition: 400ms ease-in-out;
   margin-right: 19%;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu-selection__card:hover > .menu-selection__price {
+    margin-right: 17%;
+  }
+}
 .menu-selection__card:hover > .menu-selection__check {
   transition: 400ms ease-in-out;
   width: 17%;
   opacity: 1;
   transform: translateX(0);
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu-selection__card:hover > .menu-selection__check {
+    width: 15%;
+  }
 }
 .menu-selection__card:hover .check-icon {
   transition: 500ms ease-in-out;
@@ -721,6 +735,11 @@ a {
   opacity: 0;
   transform: translateX(1px);
   transition: 400ms ease-in-out;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu-selection__check {
+    font-size: 30px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
