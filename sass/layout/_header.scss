@@ -22,5 +22,9 @@
         bottom: 30%;
         left: 7%;
         color: #000;
+        @media screen and (min-width: $breakpoint-desktop) {
+        font-size: 30px;
+        }
     }
+  
 }

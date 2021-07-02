@@ -46,10 +46,11 @@
 .working {
     margin: 0 5%;
     padding: 2rem 0;
-    @media screen and (min-width: $breakpoint-desktop) {
-        padding: 2% 15%;
+    @media screen and (min-width: $breakpoint-desktoplarge) {
+        padding: 2% 7%;
         margin: 0;
     }
+    
     &__container {
         margin: 0 5%;
         @media screen and (min-width: $breakpoint-desktop) {
@@ -98,14 +99,30 @@
 }
 /*Choix restaurant*/
 .restaurant {
+    
     padding: 2.5rem 1rem;
-    @media screen and (min-width : $breakpoint-tablet) {
+    @media screen and (min-width: $breakpoint-tablet) {
         padding: 2.5rem 2rem;
     }
     @media screen and (min-width: $breakpoint-desktop) {
-        padding: 2% 15%;
+        padding: 2% 5%;
     }
+    @media screen and (min-width: $breakpoint-desktoplarge) {
+        padding: 2% 7%;
+    }
+    &__container {
+        @media screen and (min-width: $breakpoint-tablet) {
+            margin: 2% 0;
+            display: grid;
+            grid-template-columns:  1fr 1fr;
+            grid-gap: 3%;
+            }
+        @media screen and (min-width: $breakpoint-desktoplarge) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        }
 }
+/*Cartes restaurants*/
 .restaurant-card {
     width: 100%;
     height: auto;
@@ -142,13 +159,6 @@
         padding: 0.9rem;
         @include light-font;
     }
-}
-@media screen and (min-width: $breakpoint-tablet) {
-    .restaurant__container {
-        margin: 2% 0;
-        display: grid;
-        grid-template-columns:  1fr 1fr;
-        grid-gap: 3%;
-    }
+
 }
 

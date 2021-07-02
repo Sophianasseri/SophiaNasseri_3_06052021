@@ -2,7 +2,10 @@
     background:#353535;
     padding: 1.5rem;
     @media screen and (min-width: $breakpoint-desktop) {
-        padding: 1% 15%;
+        padding: 1% 5%;
+    }
+    @media screen and (min-width: $breakpoint-desktoplarge) {
+        padding: 1% 7%;
     }
     &__logo {
         @include font-secondary;
