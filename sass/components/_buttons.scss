@@ -39,7 +39,6 @@
     margin: -1.5rem -0.5rem;
     &__full {
         background: -webkit-linear-gradient($color-primary, $color-secondary);
-        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         opacity: 0;
