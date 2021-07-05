@@ -7,6 +7,9 @@
     height: 300px;
     width: 100%; 
     object-fit: cover;
+    @media screen and (min-width: $breakpoint-desktop) {
+        object-position: 50% 65%;
+    }
 }
 .menu {
     width: 100%;
@@ -33,12 +36,12 @@
     @include font-secondary;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     & h1 {
-        font-size: 24px;
+        font-size: 28px;
     }
     @media screen and (min-width: $breakpoint-desktop) {
         justify-content: flex-start;
-        align-items: center;
         & h1 {
             font-size: 30px;
             padding-right: 1.2rem;
@@ -55,7 +58,10 @@
     margin: 1rem 0;
     opacity: 0;
     animation: menu-appearing 1s ease-in both;
-    animation-delay: 300ms;
+    animation-delay: 150ms;
+    @media screen and (min-width: $breakpoint-desktop) {
+        margin: 0;
+    }
 
     /*animation appariton menu*/
     &:nth-child(2) {
@@ -68,7 +74,7 @@
     &__title {
         @include light-font;
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 18px;
         border-bottom: 3px solid $color-tertiary;
         padding: 0.3rem 0;
         width: 40px;
@@ -77,7 +83,6 @@
     &__description {
         @include light-font;
         margin-top: 0.2rem;
-        font-size: 14px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -146,9 +151,13 @@
 .menu-container {
     @media screen and (min-width: $breakpoint-desktop) {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        padding: 3% 0;
         gap: 2%;
         justify-content: center;
+    }
+    @media screen and (min-width: $breakpoint-desktoplarge) {
+        grid-template-columns:  1fr 1fr 1fr;
     }
 }
 
