@@ -37,14 +37,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    & h1 {
+    & h2 {
         font-size: 28px;
     }
     @media screen and (min-width: $breakpoint-desktop) {
         justify-content: flex-start;
-        & h1 {
+        & h2 {
             font-size: 30px;
             padding-right: 1.2rem;
+        }
+    }
+    @media screen and (max-width: 338px) {
+        & h2 {
+            font-size: 24px;
         }
     }
 }
