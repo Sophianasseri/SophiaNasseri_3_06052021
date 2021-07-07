@@ -5,15 +5,15 @@
     padding: 0.6rem;
     position: relative;
     z-index: 2;
-    @media screen and (min-width: $breakpoint-tablet){
+    @media screen and (min-width: $breakpoint-tablet) {
         padding: 1rem;
     }
     &__logo {
         @include font-secondary;
         font-size: 30px;
         text-align: center;
-        @media screen and (min-width: $breakpoint-tablet){
-            font-size:40px;
+        @media screen and (min-width: $breakpoint-tablet) {
+            font-size: 40px;
         }
     }
     &__icon {
@@ -23,8 +23,7 @@
         left: 7%;
         color: #000;
         @media screen and (min-width: $breakpoint-tablet) {
-        font-size: 28px;
+            font-size: 28px;
         }
     }
-  
 }

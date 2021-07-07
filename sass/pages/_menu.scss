@@ -5,7 +5,7 @@
 
 .restaurant-choice__img {
     height: 300px;
-    width: 100%; 
+    width: 100%;
     object-fit: cover;
     @media screen and (min-width: $breakpoint-desktop) {
         object-position: 50% 65%;
@@ -16,7 +16,7 @@
     padding: 2rem 5%;
     background: $color-background;
     border-radius: 35px 35px 0 0;
-    position : relative;
+    position: relative;
     top: -70px;
     margin-bottom: -70px;
     &__btn {
@@ -53,7 +53,7 @@
         }
     }
 }
-.check-icon{
+.check-icon {
     margin: auto;
     transform: rotate(0);
 }
@@ -75,7 +75,7 @@
     &:nth-child(3) {
         animation-delay: 1300ms;
     }
-    
+
     &__title {
         @include light-font;
         text-transform: uppercase;
@@ -83,7 +83,6 @@
         border-bottom: 3px solid $color-tertiary;
         padding: 0.3rem 0;
         width: 40px;
-       
     }
     &__description {
         @include light-font;
@@ -95,7 +94,7 @@
     }
     &__card {
         position: relative;
-        display:flex;
+        display: flex;
         justify-content: space-between;
         padding: 1rem;
         margin: 3% 0;
@@ -105,22 +104,21 @@
             text-overflow: ellipsis;
             padding-right: 0.5em;
         }
-       /*swipe prix*/
+        /*swipe prix*/
         &:hover > .menu-selection__price {
             transition: 400ms ease-in-out;
-             margin-right: 19%;
-             @media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop){
+            margin-right: 19%;
+            @media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
                 margin-right: 17%;
             }
-
         }
         /*swipe check*/
         &:hover > .menu-selection__check {
             transition: 400ms ease-in-out;
-            width:17%;
+            width: 17%;
             opacity: 1;
             transform: translateX(0);
-            @media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop){
+            @media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
                 width: 15%;
             }
         }
@@ -137,8 +135,8 @@
     &__check {
         position: absolute;
         display: flex;
-        top:0;
-        right:0;
+        top: 0;
+        right: 0;
         color: #fff;
         font-size: 22px;
         background: $color-tertiary;
@@ -148,7 +146,7 @@
         opacity: 0;
         transform: translateX(1px);
         transition: 400ms ease-in-out;
-        @media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop){
+        @media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
             font-size: 30px;
         }
     }
@@ -162,8 +160,6 @@
         justify-content: center;
     }
     @media screen and (min-width: $breakpoint-desktoplarge) {
-        grid-template-columns:  1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
-
-

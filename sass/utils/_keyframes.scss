@@ -9,29 +9,26 @@
 @keyframes spinner {
     to {
         transform: rotate(2turn);
-
     }
 }
 @keyframes page-container {
- from {
-     transform: translate(-9999px);
- }
- to {
-     transform: translate(0);
- }
+    from {
+        transform: translate(-9999px);
+    }
+    to {
+        transform: translate(0);
+    }
 }
 
 @keyframes menu-appearing {
-    0% { 
+    0% {
         transform: translateY(30px);
-        opacity:0;
+        opacity: 0;
     }
     50% {
         opacity: 0;
     }
     100% {
-        
         opacity: 1;
     }
-
 }

@@ -1,5 +1,5 @@
 @import "../utils/variables";
-@import"../utils/mixins";
+@import "../utils/mixins";
 @import "../base/typography";
 @import "../base/reset";
 @import "../components/buttons";
@@ -41,7 +41,6 @@
     &__text {
         @include light-font;
     }
-
 }
 
 /*Fonctionnement du site*/
@@ -52,14 +51,14 @@
         padding: 2% 7%;
         margin: 0;
     }
-    
+
     &__container {
         margin: 0 5%;
         @media screen and (min-width: $breakpoint-desktop) {
             display: grid;
             grid-template-columns: 32.5% 32.5% 32.5%;
             grid-gap: 20px;
-            margin :0;
+            margin: 0;
         }
     }
     &__card {
@@ -69,7 +68,7 @@
         display: flex;
         padding: 1.8rem;
         position: relative;
-        @media screen and (min-width: $breakpoint-tablet){
+        @media screen and (min-width: $breakpoint-tablet) {
             margin: 5% 0;
         }
         &--purple {
@@ -101,7 +100,6 @@
 }
 /*Choix restaurant*/
 .restaurant {
-    
     padding: 2.5rem 1rem;
     @media screen and (min-width: $breakpoint-tablet) {
         padding: 2.5rem 2rem;
@@ -116,13 +114,13 @@
         @media screen and (min-width: $breakpoint-tablet) {
             margin: 2% 0;
             display: grid;
-            grid-template-columns:  1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             grid-gap: 3%;
-            }
+        }
         @media screen and (min-width: $breakpoint-desktoplarge) {
             grid-template-columns: 1fr 1fr 1fr 1fr;
         }
-        }
+    }
 }
 /*Cartes restaurants*/
 .restaurant-card {
@@ -130,7 +128,7 @@
     height: auto;
     position: relative;
     margin: 5% 0;
-    @media screen and (min-width: $breakpoint-tablet){
+    @media screen and (min-width: $breakpoint-tablet) {
         margin: 2% 0;
     }
     &__link {
@@ -143,7 +141,7 @@
         height: 170px;
         width: 100%;
         object-fit: cover;
-        object-position: 0 61% ;
+        object-position: 0 61%;
     }
     &__new {
         padding: 0.5rem 0.7rem;
@@ -161,6 +159,4 @@
         padding: 0.9rem;
         @include light-font;
     }
-
 }
-
